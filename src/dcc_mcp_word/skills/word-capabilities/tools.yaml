@@ -1,0 +1,39 @@
+tools:
+- name: capabilities
+  execution: sync
+  affinity: any
+  enforce_thread_affinity: false
+  job_strategy: monolithic
+  annotations:
+    read_only_hint: true
+    idempotent_hint: true
+  description: >-
+    Print the graded capability report for the Word adapter: which capabilities
+    are verified by a headless CI test, which require desktop Word
+    (host_limited), and which are unimplemented. Use before promising a Word
+    capability to a user.
+  input_schema:
+    type: object
+    properties: {}
+  call_examples:
+  - arguments: {}
+    note: List every Word capability with its grade and the evidence behind it
+- name: preflight
+  execution: sync
+  affinity: any
+  enforce_thread_affinity: false
+  job_strategy: monolithic
+  annotations:
+    read_only_hint: true
+    idempotent_hint: true
+  description: >-
+    Start-up self-check: report whether the headless Open XML backend and the
+    desktop Word COM backend are available on this machine, which capabilities
+    degrade without Word, and the supported host matrix. Never fails simply
+    because desktop Word is absent.
+  input_schema:
+    type: object
+    properties: {}
+  call_examples:
+  - arguments: {}
+    note: Check what this machine can actually do before a Word run

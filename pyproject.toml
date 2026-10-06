@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dcc-mcp-word"
+version = "0.1.0"
+description = "Word adapter for the DCC-MCP ecosystem — headless Word IR to DOCX compile with read-back verification over the dcc-mcp-office runtime"
+authors = [{ name = "Long Hao", email = "hal.long@outlook.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["word", "office", "docx", "mcp", "dcc", "ai", "llm", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Office Suites",
+]
+
+dependencies = [
+    # Release Train anchor: same core the other adapters pin.
+    "dcc-mcp-core>=0.18.2,<1.0.0",
+]
+
+[project.optional-dependencies]
+# The headless writer is not shipped as a runtime dependency: dcc-mcp-core's
+# zero-runtime-dependency rule keeps the adapter installable inside DCCs that
+# pin their own python-docx. Install the extra for headless compilation.
+headless = [
+    "python-docx>=1.1",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.8.0",
+    "hatchling",
+    "build",
+    "python-docx>=1.1",
+    "pywin32>=306; sys_platform == 'win32'",
+]
+sidecar = [
+    "dcc-mcp-server>=0.17.43",
+]
+
+[project.urls]
+Homepage = "https://github.com/dcc-mcp/dcc-mcp-word"
+
+[project.scripts]
+dcc-mcp-word = "dcc_mcp_word._standalone_entry:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dcc_mcp_word"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/dcc_mcp_word/skills" = "dcc_mcp_word/skills"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
