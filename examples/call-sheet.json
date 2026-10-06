@@ -1,0 +1,22 @@
+{
+  "schema_version": "office-ir/1.0",
+  "kind": "word",
+  "document_id": "fpt:call-sheet-2026-10-07",
+  "metadata": {"title": "Call sheet — 2026-10-07", "author": "pipeline", "language": "en"},
+  "document": {
+    "styles": ["Heading 1", "Normal"],
+    "paragraphs": [{"text": "Unit 2 — exterior night. All crew to base camp by 06:45.", "style": "Normal"}],
+    "sections": [
+      {"title": "Schedule", "paragraphs": [{"text": "Call time 07:00, lunch 12:30, wrap 19:30", "style": "Normal"}]},
+      {"title": "Safety", "page_break_before": true, "paragraphs": [{"text": "Wet conditions overnight; hi-vis required at all times.", "style": "Normal"}]}
+    ],
+    "lists": [{"items": ["Bring rain cover", "Check generator fuel", "Confirm permits"], "style": "List Bullet"}],
+    "tables": [
+      {"header": true, "rows": [["Shot", "Status", "VFX"], ["sh010", "ip", "yes"], ["sh012", "wip", "no"], ["sh015", "appr", "no"]]}
+    ],
+    "headers": [{"section_index": 0, "text": "CALL SHEET — 2026-10-07"}],
+    "footers": [{"section_index": 0, "text": "Page"}],
+    "fields": [{"kind": "toc"}, {"kind": "page"}]
+  },
+  "outputs": ["docx"]
+}

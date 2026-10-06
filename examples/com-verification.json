@@ -1,0 +1,35 @@
+{
+  "artifact": "P:\\monica\\issues\\i-01a110d4b4ac\\agents\\a-a7020420eb91\\workdir\\dcc-mcp-word\\examples\\call-sheet.docx",
+  "paragraphs": 28,
+  "tables": 1,
+  "words": 52,
+  "pages": 2,
+  "fields_before_update": [
+    {
+      "code": "TOC \\o \"1-3\" \\h \\z \\u",
+      "result": "Right-click and choose 'Update Field' to build the table of contents."
+    }
+  ],
+  "fields_after_update": [
+    {
+      "code": "TOC \\o \"1-3\" \\h \\z \\u",
+      "result": "Schedule\t1\rSafety\t2\r"
+    },
+    {
+      "code": "HYPERLINK \\l \"_Toc242211723\"",
+      "result": "Schedule\t1"
+    },
+    {
+      "code": "PAGEREF _Toc242211723 \\h",
+      "result": "1"
+    },
+    {
+      "code": "HYPERLINK \\l \"_Toc242211724\"",
+      "result": "Safety\t2"
+    },
+    {
+      "code": "PAGEREF _Toc242211724 \\h",
+      "result": "2"
+    }
+  ]
+}
