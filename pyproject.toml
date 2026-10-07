@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dcc-mcp-word"
-version = "0.1.0"
+version = "0.1.1"
 description = "Word adapter for the DCC-MCP ecosystem — headless Word IR to DOCX compile with read-back verification over the dcc-mcp-office runtime"
 authors = [{ name = "Long Hao", email = "hal.long@outlook.com" }]
 readme = "README.md"
