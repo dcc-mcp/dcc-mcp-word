@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/dcc-mcp/dcc-mcp-word/compare/v0.1.1...v0.1.2) (2026-10-17)
+
+
+### Bug Fixes
+
+* avoid duplicate skills in Word wheels ([#5](https://github.com/dcc-mcp/dcc-mcp-word/issues/5)) ([fd38aa9](https://github.com/dcc-mcp/dcc-mcp-word/commit/fd38aa905eaeea1acc7b6e5caa642279f34c5ca0))
+
 ## [0.1.1](https://github.com/dcc-mcp/dcc-mcp-word/compare/v0.1.0...v0.1.1) (2026-10-17)
 
 
