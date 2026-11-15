@@ -31,7 +31,7 @@ from .host_matrix import HOST_MATRIX, preflight
 from .validate import validate_artifacts, validate_envelope
 from .word_ir import IrValidationError, WordEnvelope, load_word_ir
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 __all__ = [
     "CAPABILITIES",
