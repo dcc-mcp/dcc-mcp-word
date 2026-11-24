@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/dcc-mcp/dcc-mcp-word/compare/v0.1.2...v0.1.3) (2026-11-24)
+
+
+### Documentation
+
+* refresh the generated DCC-MCP host matrix pointer ([2540e55](https://github.com/dcc-mcp/dcc-mcp-word/commit/2540e55d89cb068c3171c0478a60d916e07ee521))
+* refresh the generated DCC-MCP host matrix pointer ([7372652](https://github.com/dcc-mcp/dcc-mcp-word/commit/73726522e8577f09266368546259ded55c195a20))
+
 ## [0.1.2](https://github.com/dcc-mcp/dcc-mcp-word/compare/v0.1.1...v0.1.2) (2026-10-17)
 
 
